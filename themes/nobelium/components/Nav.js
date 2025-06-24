@@ -130,7 +130,7 @@ const NavBar = props => {
     links = links.concat(customNav)
   }
 
-  // 如果 开启自定义菜单，则覆盖Page生成的菜单
+  // 如果 开启自定义菜单，则覆盖 Page 生成的菜单
   if (siteConfig('CUSTOM_MENU')) {
     links = customMenu
   }
@@ -140,7 +140,7 @@ const NavBar = props => {
   }
 
   return (
-    <div className='flex-shrink-0 flex'>
+    <div className='flex-shrink-0 flex ml-10'>
       <ul className='hidden md:flex flex-row'>
         {links?.map((link, index) => (
           <MenuItemDrop key={index} link={link} />
